@@ -115,6 +115,23 @@ p {
 .none {
   display: none;
 }
+
+.bold {
+  font-weight: bold;
+}
+
+.titulo-carousel {
+  color: var(--first-color);
+}
+
+.texto-blanco {
+  color: var(--gray-light-color);
+}
+
+.inicio-noticias {
+  background-color: #000;
+}
+
 /******************MENU*********************/
 .menu-btn {
   outline: thin solid var(--first-color);
@@ -188,9 +205,9 @@ p {
 .logo a {
   color: var(--first-color);
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 2.2rem;
   text-decoration: none;
-  padding-left: 20px;
+  padding-left: 18px;
 }
 
 .logo img {
@@ -229,15 +246,118 @@ p {
   .menu a:hover {
     background-color: transparent;
   }
-  /*
-  .logo:hover > .rectangulo1 {
-    width: 20px;
-    height: 30px;
-    border: 2px solid #000;
-    background: #428bca;
-    display: block;
-    left: 0;
-    bottom: 0;
-    transition: all 0.2s cubic-bezier(0.86, 0, 0.07, 1);
-  }*/
+
+  .logo a {
+    color: var(--first-color);
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding-left: 9.5px;
+  }
+}
+
+/*********************************************HOME**********************************************/
+
+/*****************HERO IMAGE*****************/
+.hero-image {
+  background-image: var(--hero-image);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: var(--hero-attachment); /*para que no scrolle*/
+}
+
+.hero-image-opacity {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--hero-opacity-color);
+}
+
+.hero-image-title {
+  font-size: 7.5vw;
+  color: var(--hero-text-color);
+}
+
+/*************CAROUSEL***************/
+@keyframes carousel-slide {
+  0% {
+    transform: translateX(0%);
+  }
+
+  33% {
+    transform: translateX(-33%);
+  }
+
+  66% {
+    transform: translateX(-66%);
+  }
+}
+
+.avatar {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: -2rem;
+  /* padding-right: 17px;
+  padding-left: 10px;*/
+  width: 1024px;
+  height: auto;
+}
+
+.carousel {
+  /*margin: 2rem auto;*/
+  /*padding: 2rem 0;*/
+  max-width: 100%;
+  text-align: center;
+  overflow-x: hidden;
+  background-color: var(--carousel-bg-color);
+}
+
+.carousel .slides {
+  padding-left: 0;
+  /*Por cada slide debemos aumentar el ancho 100%*/
+  display: flex;
+  list-style: none;
+  width: 300%;
+  transition: transform 0.5s ease-in-out;
+  /*animation: carousel-slide 12s ease-in-out 3s;*/
+}
+
+/*~ este simbolo lo que hace es señalar al siguiente hermano*/
+#slide-1:checked ~ .slides {
+  transform: translateX(0%);
+}
+
+#slide-2:checked ~ .slides {
+  transform: translateX(-33.3333333333%);
+}
+
+#slide-3:checked ~ .slides {
+  transform: translateX(-66.666666666%);
+}
+
+#slide-1:checked ~ .slides-nav label#dot-1,
+#slide-2:checked ~ .slides-nav label#dot-2,
+#slide-3:checked ~ .slides-nav label#dot-3 {
+  background-color: var(--gray-dark-color);
+}
+
+.carousel input {
+  display: none;
+}
+
+.carousel label {
+  border: medium solid var(--gray-dark-color);
+  border-radius: 50%;
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.75rem;
+  cursor: pointer;
+  margin: 0 0.25rem;
+}
+
+@media screen and (min-width: 1024px) {
 }
