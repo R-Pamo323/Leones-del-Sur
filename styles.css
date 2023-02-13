@@ -342,7 +342,7 @@ p {
 #slide-1:checked ~ .slides-nav label#dot-1,
 #slide-2:checked ~ .slides-nav label#dot-2,
 #slide-3:checked ~ .slides-nav label#dot-3 {
-  background-color: var(--gray-dark-color);
+  background-color: var(--first-color);
 }
 
 .carousel input {
@@ -350,7 +350,7 @@ p {
 }
 
 .carousel label {
-  border: medium solid var(--gray-dark-color);
+  border: medium solid var(--first-alpha-color);
   border-radius: 50%;
   display: inline-block;
   width: 0.75rem;
@@ -359,5 +359,33 @@ p {
   margin: 0 0.25rem;
 }
 
-@media screen and (min-width: 1024px) {
+/*TIMER DE PROXIMO PARTIDO*/
+
+.countdown {
+  display: flex;
+  justify-content: stretch;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.countdown div {
+  display: grid;
+  place-items: center;
+  padding: 1px;
+}
+
+.countdown p {
+  font-size: 3rem;
+  /*color: linear-gradient(red, black);*/
+  background: linear-gradient(black, red);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.countdown span {
+  display: block;
+  padding: 2px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400px;
 }
