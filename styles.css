@@ -415,6 +415,8 @@ p {
   );
   -webkit-background-clip: text;
   color: transparent;
+  font-style: bold;
+  font-weight: bold;
 }
 
 #hours {
@@ -425,6 +427,8 @@ p {
   );
   -webkit-background-clip: text;
   color: transparent;
+  font-style: bold;
+  font-weight: bold;
 }
 
 #minutes {
@@ -435,6 +439,8 @@ p {
   );
   -webkit-background-clip: text;
   color: transparent;
+  font-style: bold;
+  font-weight: bold;
 }
 
 #seconds {
@@ -445,6 +451,8 @@ p {
   );
   -webkit-background-clip: text;
   color: transparent;
+  font-style: bold;
+  font-weight: bold;
 }
 
 .countdown span {
@@ -462,18 +470,122 @@ p {
 
 .gallery-cell {
   width: 66%;
-  height: 200px;
+  height: 400px;
+  margin-top: 50px;
   margin-right: 10px;
-  background: #8c8;
-  counter-increment: gallery-cell;
+  background: #eee;
+  /*counter-increment: gallery-cell;*/
 }
 
 /* cell number */
 .gallery-cell:before {
   display: block;
   text-align: center;
-  content: counter(gallery-cell);
+  /*content: counter(gallery-cell);*/
   line-height: 200px;
   font-size: 20px;
   color: white;
+}
+
+.fecha {
+  border: thin solid black;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(251, 2, 27, 1) 100%
+  );
+  color: white;
+  display: grid;
+  grid-template-columns: 60px auto auto;
+}
+
+.fecha .numero {
+  grid-row: span 2;
+  text-align: center;
+  font-size: 3rem;
+  padding: 20px 0;
+  font-style: bold;
+  font-weight: bold;
+}
+
+.fecha .fecha-dia {
+  font-size: 2rem;
+  font-style: bold;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-left: 15px;
+}
+
+.fecha .fecha-mes {
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-left: 15px;
+}
+
+.fecha .mensaje-fecha1 {
+  font-size: 2rem;
+  font-style: bold;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: end;
+  padding-right: 20px;
+}
+
+.fecha .mensaje-fecha2 {
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: end;
+  padding-right: 20px;
+}
+
+.contenido {
+  display: grid;
+  grid-template-columns: 100px auto 100px;
+  border: thin solid black;
+}
+
+.contenido .logo-copa {
+  grid-column: span 3;
+  text-align: center;
+}
+
+.contenido .logo-copa > img {
+  width: 150px;
+  height: auto;
+  margin: 0;
+  padding-left: 10px;
+}
+
+.contenido .mensaje-partido {
+  grid-column: span 3;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.contenido .rivales {
+  font-size: 1.8rem;
+  grid-column: span 3;
+  text-align: center;
+  font-style: bold;
+  font-weight: bold;
+}
+
+.contenido .estadio {
+  grid-column: span 3;
+  text-align: center;
+  font-style: oblique;
+  font-size: 1.2rem;
+}
+
+.contenido .escudo-fecha {
+  display: flex;
+  justify-content: center;
 }

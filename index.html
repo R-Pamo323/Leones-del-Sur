@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/path/to/flickity.css" media="screen">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <title>Leones del Sur</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -106,10 +106,55 @@
                     <span>Segundos</span>
                 </div>
             </div>
-            <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
-                <div class="gallery-cell"></div>
-                <div class="gallery-cell"></div>
-                <div class="gallery-cell"></div>
+            <div class="gallery js-flickity" data-flickity-options='{"initialIndex": ".is-initial-select"}'>
+                <div class="gallery-cell">
+                    <div class="fecha">
+                        <div class="numero">14</div>
+                        <div class="fecha-dia">MARTES</div>
+                        <div class="mensaje-fecha1">FECHA</div>
+                        <div class="fecha-mes">FEBRERO</div>
+                        <div class="mensaje-fecha2">ANTERIOR</div>
+                    </div>
+                    <div class="contenido">
+                        <div class="logo-copa">
+                            <img src="assets/Logoconmando.png" alt="Logochapatuchancha">
+                        </div>
+                        <div class="mensaje-partido">90' + 2</div>
+                        <div class="escudo-fecha">
+                            <img src="assets/Logoconmando.png" alt="Logochapatuchancha">
+                            <p>
+                                19:00
+                            </p>
+                            <img src="assets/Logoconmando.png" alt="Logochapatuchancha">
+                        </div>
+                        <div class="rivales">Leones del Sur vs Paracas FC</div>
+                        <div class="estadio">Estadio de la UNSA</div>
+                    </div>
+                </div>
+                <div class="gallery-cell is-initial-select">
+                    <div class="fecha">
+                        <div class="numero">20</div>
+                        <div class="fecha-dia">LUNES</div>
+                        <div class="mensaje-fecha1">FECHA</div>
+                        <div class="fecha-mes">FEBRERO</div>
+                        <div class="mensaje-fecha2">ACTUAL</div>
+                    </div>
+                    <div class="contenido">
+                        <h3>Martes <br>Febrero</br></h3>
+                    </div>
+                </div>
+                <div class="gallery-cell">
+                    <div class="fecha">
+                        <div class="numero">3</div>
+                        <div class="fecha-dia">VIERNES</div>
+                        <div class="mensaje-fecha1">PRÓXIMA</div>
+                        <div class="fecha-mes">MARZO</div>
+                        <div class="mensaje-fecha2">FECHA</div>
+                    </div>
+                    <div class="contenido">
+                        <h3>Martes <br>Febrero</br></h3>
+                    </div>
+                </div>
             </div>
 
         </section>
