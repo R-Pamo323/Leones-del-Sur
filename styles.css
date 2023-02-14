@@ -112,6 +112,16 @@ p {
   padding: 2rem 1rem;
 }
 
+.section-title {
+  border-top: thin solid var(--first-color);
+  border-bottom: thin solid var(--first-color);
+  margin: 2rem auto;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  color: var(--title-color);
+  font-style: bold;
+}
+
 .none {
   display: none;
 }
@@ -129,6 +139,21 @@ p {
 }
 
 .inicio-noticias {
+  background-color: #000;
+}
+
+.background-color {
+  background-color: #000;
+}
+
+.bg-gray-light {
+  background-color: var(--gray-light-color);
+}
+
+.footer {
+  margin-bottom: var(--header-height);
+  padding: 0.5rem;
+  text-align: center;
   background-color: #000;
 }
 
@@ -222,6 +247,10 @@ p {
     top: 0;
     padding: 0.5rem;
     height: calc(var(--header-height) - 0.5rem);
+  }
+
+  .footer {
+    margin-bottom: 0;
   }
   .menu-btn {
     display: none;
@@ -363,7 +392,7 @@ p {
 
 .countdown {
   display: flex;
-  justify-content: stretch;
+  justify-content: space-evenly;
   width: 100%;
   flex-wrap: wrap;
 }
@@ -376,8 +405,44 @@ p {
 
 .countdown p {
   font-size: 3rem;
-  /*color: linear-gradient(red, black);*/
-  background: linear-gradient(black, red);
+}
+
+#days {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 99%,
+    rgba(251, 2, 27, 1) 100%
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+#hours {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 50%,
+    rgba(251, 2, 27, 1) 100%
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+#minutes {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(251, 2, 27, 1) 50%
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+#seconds {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(251, 2, 27, 1) 1%
+  );
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -388,4 +453,27 @@ p {
   text-align: center;
   font-size: 1rem;
   font-weight: 400px;
+}
+
+/*Carousel de Internetxxxxx*/
+.gallery {
+  background: #eee;
+}
+
+.gallery-cell {
+  width: 66%;
+  height: 200px;
+  margin-right: 10px;
+  background: #8c8;
+  counter-increment: gallery-cell;
+}
+
+/* cell number */
+.gallery-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 200px;
+  font-size: 20px;
+  color: white;
 }

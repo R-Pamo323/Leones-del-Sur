@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/path/to/flickity.css" media="screen">
     <title>Leones del Sur</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -27,7 +28,7 @@
             </button>
             <nav class="menu">
                 <a href="#inicio">Home</a>
-                <a href="#partidos">Partidos</a>
+                <a href="#proximos">Partidos</a>
                 <a href="#resultados">Resultados</a>
                 <a href="#productos">Productos</a>
                 <a href="#jugadores">Jugadores</a>
@@ -35,7 +36,7 @@
             </nav>
         </section>
     </header>
-    <section class="inicio-noticias">
+    <section id="inicio" class="inicio-noticias">
         <section class="container">
             <article class="carousel hero-image" style="--carousel-bg-color: #000;">
                 <input type="radio" name="slides" id="slide-1" checked>
@@ -84,9 +85,9 @@
             </article>
         </section>
     </section>
-    <section class="proximos-partidos">
-        <section class="container">
-            <h2>PRÓXIMO PARTIDO</h2>
+    <section id="proximos" class="proximos-partidos background-color section">
+        <section class="container bg-gray-light">
+            <h2 class="section-title">PRÓXIMO PARTIDO</h2>
             <div class="countdown">
                 <div>
                     <p id="days">00</p>
@@ -105,15 +106,22 @@
                     <span>Segundos</span>
                 </div>
             </div>
+            <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+                <div class="gallery-cell"></div>
+                <div class="gallery-cell"></div>
+                <div class="gallery-cell"></div>
+            </div>
+
         </section>
 
     </section>
-    <section class="resultados"></section>
-    <section class="productos"></section>
-    <section class="jugadores"></section>
-    <section class="trofeos"></section>
-    <footer></footer>
+    <section id="resultados" class="resultados"></section>
+    <section id="productos" class="productos"></section>
+    <section id="jugadores" class="jugadores"></section>
+    <section id="trofeos" class="trofeos"></section>
+    <footer class="footer"></footer>
     <script src="javascript.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
 
 </html>
