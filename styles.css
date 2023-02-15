@@ -113,8 +113,8 @@ p {
 }
 
 .section-title {
-  border-top: thin solid var(--first-color);
-  border-bottom: thin solid var(--first-color);
+  border-top: thick solid var(--first-color);
+  border-bottom: thick solid var(--first-color);
   margin: 2rem auto;
   padding: 0.5rem 1rem;
   text-align: center;
@@ -407,6 +407,11 @@ p {
   font-size: 3rem;
 }
 
+.countdown span {
+  font-style: bold;
+  font-weight: bold;
+}
+
 #days {
   background: linear-gradient(
     90deg,
@@ -466,6 +471,7 @@ p {
 /*Carousel de Internetxxxxx*/
 .gallery {
   background: #eee;
+  padding-bottom: 20px;
 }
 
 .gallery-cell {
@@ -486,6 +492,20 @@ p {
   font-size: 20px;
   color: white;
 }
+
+.flickity-page-dots {
+  bottom: -22px;
+}
+/* dots are lines */
+.flickity-page-dots .dot {
+  height: 4px;
+  width: 40px;
+  margin: 0;
+  border-radius: 0;
+  background: red;
+}
+
+/**************Hasta aca el acarousel Flickity***********/
 
 .fecha {
   border: thin solid black;
@@ -634,4 +654,32 @@ p {
   );
   -webkit-background-clip: text;
   color: transparent;
+}
+
+/*CAROUSEL AGRUPADOS FLICKITY*/
+.carousel-agrupado {
+  background: black;
+}
+
+.carousel-cell {
+  width: 28%;
+  height: 400px;
+  margin-right: 10px;
+  background: #8c8;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
+
+.carousel-cell.is-selected {
+  background: #ed2;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(carousel-cell);
+  line-height: 400px;
+  font-size: 80px;
+  color: white;
 }
