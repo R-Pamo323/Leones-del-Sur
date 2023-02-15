@@ -548,26 +548,37 @@ p {
 
 .contenido {
   display: grid;
-  grid-template-columns: 100px auto 100px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas:
+    "logo-copa logo-copa logo-copa"
+    "mensaje-partido  mensaje-partido mensaje-partido"
+    "escudo-1  horario  escudo-2"
+    "rivales    rivales  rivales"
+    "estadio estadio estadio";
+  /*grid-template-columns: 100px auto 100px;*/
   border: thin solid black;
 }
 
 .contenido .logo-copa {
   grid-column: span 3;
   text-align: center;
+  grid-area: logo-copa;
 }
 
 .contenido .logo-copa > img {
-  width: 150px;
+  width: 100px;
   height: auto;
   margin: 0;
   padding-left: 10px;
+  padding-top: 10px;
 }
 
 .contenido .mensaje-partido {
   grid-column: span 3;
   text-align: center;
   font-size: 1.2rem;
+  grid-area: mensaje-partido;
 }
 
 .contenido .rivales {
@@ -576,6 +587,7 @@ p {
   text-align: center;
   font-style: bold;
   font-weight: bold;
+  grid-area: rivales;
 }
 
 .contenido .estadio {
@@ -583,9 +595,43 @@ p {
   text-align: center;
   font-style: oblique;
   font-size: 1.2rem;
+  grid-area: estadio;
 }
 
-.contenido .escudo-fecha {
-  display: flex;
-  justify-content: center;
+.contenido .escudo-1 {
+  grid-area: escudo-1;
+  width: 115px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  align-self: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.contenido .escudo-2 {
+  grid-area: escudo-2;
+  width: 115px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  align-self: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.contenido .horario {
+  grid-area: horario;
+  font-size: 2.65rem;
+  font-style: bold;
+  font-weight: bold;
+  text-align: center;
+  align-self: center;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(251, 2, 27, 1) 100%
+  );
+  -webkit-background-clip: text;
+  color: transparent;
 }
