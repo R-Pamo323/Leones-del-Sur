@@ -665,21 +665,158 @@ p {
   width: 28%;
   height: 400px;
   margin-right: 10px;
-  background: #8c8;
+  background-size: auto 400px;
+  background-position: center;
   border-radius: 5px;
-  counter-increment: carousel-cell;
 }
 
 .carousel-cell.is-selected {
-  background: #ed2;
+  /*background: #ed2;*/
 }
 
 /* cell number */
 .carousel-cell:before {
   display: block;
   text-align: center;
-  content: counter(carousel-cell);
   line-height: 400px;
   font-size: 80px;
   color: white;
+}
+
+.carousel-cell img {
+  width: auto;
+  height: 400px;
+}
+
+.carousel-cell:hover {
+  /*background: #ed2;*/
+}
+
+.jug1 {
+  background-image: url("assets/Jugadores/Gallese.JPG");
+}
+.jug2 {
+  background-image: url("assets/Jugadores/Advincula.JPG");
+}
+.jug3 {
+  background-image: url("assets/Jugadores/Abram.JPG");
+}
+.jug4 {
+  background-image: url("assets/Jugadores/Zambrano.JPG");
+}
+.jug5 {
+  background-image: url("assets/Jugadores/Cueva.JPG");
+}
+.jug6 {
+  background-image: url("assets/Jugadores/Tapia.JPG");
+}
+.jug7 {
+  background-image: url("assets/Jugadores/Trauco.JPG");
+}
+.jug8 {
+  background-image: url("assets/Jugadores/Goro.JPG");
+}
+.jug9 {
+  background-image: url("assets/Jugadores/Guerrero.JPG");
+}
+.jug10 {
+  background-image: url("assets/Jugadores/Farfan.JPG");
+}
+.jug11 {
+  background-image: url("assets/Jugadores/Lapadula.JPG");
+}
+.jug12 {
+  background-image: url("assets/Jugadores/DT.JPG");
+}
+
+.info-jugador {
+  display: grid;
+  color: white;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas:
+    "nombre nombre nombre"
+    "posicion posicion posicion"
+    "partidos-stats goles-stats asistencias-stats"
+    "partidos  goles  asistencias";
+  text-align: center;
+}
+
+.info-jugador .nombre {
+  grid-column: span 3;
+  text-align: center;
+  grid-area: nombre;
+  font-style: bold;
+  font-weight: bold;
+  padding-top: 330px;
+  font-size: 2.5rem;
+}
+
+.info-jugador .posicion {
+  grid-column: span 3;
+  text-align: center;
+  grid-area: posicion;
+  font-style: italic;
+  font-size: 1.2rem;
+  padding-bottom: 5px;
+}
+
+.info-jugador .partidos-stats {
+  grid-area: partidos-stats;
+  font-size: 0.7rem;
+  /*display: none;*/
+}
+
+.info-jugador .goles-stats {
+  grid-area: goles-stats;
+  font-size: 0.7rem;
+  display: none;
+}
+
+.info-jugador .asistencias-stats {
+  grid-area: asistencias-stats;
+  font-size: 0.7rem;
+  display: none;
+}
+
+.info-jugador .partidos {
+  grid-area: partidos;
+  font-style: bold;
+  font-weight: bold;
+  font-size: 1.2rem;
+  display: none;
+}
+
+.info-jugador .goles {
+  grid-area: goles;
+  font-style: bold;
+  font-weight: bold;
+  font-size: 1.2rem;
+  display: none;
+}
+
+.info-jugador .asistencias {
+  grid-area: asistencias;
+  font-style: bold;
+  font-weight: bold;
+  font-size: 1.2rem;
+  display: none;
+}
+
+.info-jugador-1 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(2, auto);
+  color: white;
+  text-align: center;
+  padding-top: 350px;
+}
+
+.info-jugador-2 {
+  color: white;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  /*display: none;*/
 }
