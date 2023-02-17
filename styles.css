@@ -702,16 +702,16 @@ p {
   background-image: url("assets/Jugadores/Abram.JPG");
 }
 .jug4 {
-  background-image: url("assets/Jugadores/Zambrano.JPG");
+  background-image: url("assets/Jugadores/Trauco.JPG");
 }
 .jug5 {
-  background-image: url("assets/Jugadores/Cueva.JPG");
+  background-image: url("assets/Jugadores/Zambrano.JPG");
 }
 .jug6 {
   background-image: url("assets/Jugadores/Tapia.JPG");
 }
 .jug7 {
-  background-image: url("assets/Jugadores/Trauco.JPG");
+  background-image: url("assets/Jugadores/Cueva.JPG");
 }
 .jug8 {
   background-image: url("assets/Jugadores/Goro.JPG");
@@ -729,87 +729,29 @@ p {
   background-image: url("assets/Jugadores/DT.JPG");
 }
 
-.info-jugador {
-  display: grid;
-  color: white;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, auto);
-  grid-template-areas:
-    "nombre nombre nombre"
-    "posicion posicion posicion"
-    "partidos-stats goles-stats asistencias-stats"
-    "partidos  goles  asistencias";
-  text-align: center;
-}
-
-.info-jugador .nombre {
-  grid-column: span 3;
-  text-align: center;
-  grid-area: nombre;
-  font-style: bold;
-  font-weight: bold;
-  padding-top: 330px;
-  font-size: 2.5rem;
-}
-
-.info-jugador .posicion {
-  grid-column: span 3;
-  text-align: center;
-  grid-area: posicion;
-  font-style: italic;
-  font-size: 1.2rem;
-  padding-bottom: 5px;
-}
-
-.info-jugador .partidos-stats {
-  grid-area: partidos-stats;
-  font-size: 0.7rem;
-  /*display: none;*/
-}
-
-.info-jugador .goles-stats {
-  grid-area: goles-stats;
-  font-size: 0.7rem;
-  display: none;
-}
-
-.info-jugador .asistencias-stats {
-  grid-area: asistencias-stats;
-  font-size: 0.7rem;
-  display: none;
-}
-
-.info-jugador .partidos {
-  grid-area: partidos;
-  font-style: bold;
-  font-weight: bold;
-  font-size: 1.2rem;
-  display: none;
-}
-
-.info-jugador .goles {
-  grid-area: goles;
-  font-style: bold;
-  font-weight: bold;
-  font-size: 1.2rem;
-  display: none;
-}
-
-.info-jugador .asistencias {
-  grid-area: asistencias;
-  font-style: bold;
-  font-weight: bold;
-  font-size: 1.2rem;
-  display: none;
-}
-
 .info-jugador-1 {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(2, auto);
   color: white;
   text-align: center;
-  padding-top: 350px;
+  padding-top: 325px;
+  transition: all 0.4s ease-in-out;
+  border-bottom: 2px solid white;
+}
+
+.info-jugador-1 .nombre {
+  text-align: center;
+  font-style: bold;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.info-jugador-1 .posicion {
+  text-align: center;
+  font-style: italic;
+  font-size: 1.2rem;
+  padding-bottom: 10px;
 }
 
 .info-jugador-2 {
@@ -818,5 +760,22 @@ p {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, auto);
-  /*display: none;*/
+}
+
+.info-jugador-2 .stats {
+  font-size: 0.75rem;
+  font-style: bold;
+  font-weight: bold;
+}
+
+.info-jugador-2 .stats-info {
+  font-style: bold;
+  font-weight: bold;
+  font-size: 1.7rem;
+  margin-top: 0;
+}
+
+.carousel-cell:hover .info-jugador-1 {
+  padding-top: 225px;
+  transition: all 0.4s ease-in-out;
 }
