@@ -921,6 +921,10 @@ p {
   grid-row-start: span 2;
 }
 
+.galeria-foto:nth-child(10) {
+  grid-column-start: span 2;
+}
+
 .galeria-foto:nth-child(6) {
   grid-column-start: span 2;
 }
