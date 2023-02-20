@@ -1013,12 +1013,12 @@ p {
   grid-row-start: span 2;
   grid-column-start: span 2;
 }
-
+/*
 .galeria-foto:nth-child(19) {
   grid-column-start: span 3;
   grid-row-start: span 3;
   padding-bottom: 0;
-}
+}*/
 
 @media screen and (min-width: 1024px) {
   .galeria-container {
@@ -1045,10 +1045,10 @@ p {
     grid-row-start: span 3;
     grid-column-start: span 2;
   }
-
+  /*
   .galeria-foto:nth-child(19) {
     grid-column-start: span 4;
     grid-row-start: span 4;
     padding-bottom: 0;
-  }
+  }*/
 }
