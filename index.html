@@ -37,53 +37,89 @@
     </header>
     <section id="inicio" class="inicio-noticias">
         <section class="container">
-            <article class="carousel hero-image" style="--carousel-bg-color: #000;">
-                <input type="radio" name="slides" id="slide-1" checked>
-                <input type="radio" name="slides" id="slide-2">
-                <input type="radio" name="slides" id="slide-3">
-                <ul class="slides">
-                    <li class="slide">
-                        <img class="avatar" src="assets/Fondoleones.jpeg" alt="Cliente 1">
-                        <h3 class="bold titulo-carousel"><b>LEONES DEL SUR</b></h3>
-                        <blockquote class="texto-blanco">
-                            Los Leones del Sur se clasifican a Cuarta División, luego de un duelo reñido con
-                            los CapaFC derrotandolos con una score de 4 a 3 en el tiempo adicional del
-                            partido. "Esperamos seguir ascendiendo, Saludos."
-                        </blockquote>
-                        <small><a href="https://www.youtube.com/@elgoro975" target="_blank" rel="noopener">Ver
-                                más</a></small>
-                    </li>
-                    <li class="slide">
-                        <img class="avatar" src="assets/Noticia2.jpg" alt="Cliente 1">
-                        <h3 class="bold titulo-carousel"><b>ACTUALIZACIÓN 2023</b></h3>
-                        <blockquote class="texto-blanco">
-                            FIFA 23 - Clubes Pro, trae una nueva actualización para febrero 15. Donde traerá las
-                            siguientes caracteristicas. Nuevas prendas para customizar a tu jugador y nuevos niveles en
-                            los campos de entrenamiento.
-                        </blockquote>
-                        <small><a href="https://www.youtube.com/@elgoro975" target="_blank" rel="noopener">Ver
-                                más</a></small>
-                    </li>
-                    <li class="slide">
-                        <img class="avatar" src="assets/Noticia3.jpg" alt="Cliente 1">
-                        <h3 class="bold titulo-carousel"><b>LEONES DEL SUR</b></h3>
-                        <blockquote class="texto-blanco">
-                            Los Leones del Sur se clasifican a Cuarta División, luego de un duelo reñido con
-                            los CapaFC derrotandolos con una score de 4 a 3 en el tiempo adicional del
-                            partido. "Esperamos seguir ascendiendo, Saludos."
-                        </blockquote>
-                        <small><a href="https://www.youtube.com/@elgoro975" target="_blank" rel="noopener">Ver
-                                más</a></small>
-                    </li>
-                </ul>
-                <aside class="slides-nav">
-                    <label for="slide-1" id="dot-1"></label>
-                    <label for="slide-2" id="dot-2"></label>
-                    <label for="slide-3" id="dot-3"></label>
-                </aside>
-            </article>
+            <div class="carousel-noticias" data-flickity='{ "wrapAround": true }'>
+                <div class="carousel-cell-noticias">
+                    <a href="#noticia-1">
+                        <div class="noticia-foto">
+                            <img src="assets/Fondoleones.jpeg" alt="Noticia1">
+                            <h2 class="noticia-title especial">Campeones EA Cup - Leones del Sur</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="carousel-cell-noticias">
+                    <a href="#noticia-2">
+                        <div class="noticia-foto">
+                            <img src="assets/Noticia2.jpg" alt="Noticia2">
+                            <h2 class="noticia-title">Actualización Marzo 2023</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="carousel-cell-noticias">
+                    <a href="#noticia-3">
+                        <div class="noticia-foto">
+                            <img src="assets/Noticia3.jpg" alt="Noticia3">
+                            <h2 class="noticia-title">Únete a Clubes Pro - 2023</h2>
+                        </div>
+                    </a>
+                </div>
+            </div>
         </section>
     </section>
+    <article class="modal" id="noticia-1">
+        <div class="modal-content">
+            <a href="#cerrar" class="modal-close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path
+                        d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M16.207,14.793l-1.414,1.414L12,13.414 l-2.793,2.793l-1.414-1.414L10.586,12L7.793,9.207l1.414-1.414L12,10.586l2.793-2.793l1.414,1.414L13.414,12L16.207,14.793z" />
+                </svg>
+            </a>
+            <article class="noticia-modal">
+                <img src="assets/Fondoleones.jpeg" alt="noticia 1">
+                <div class="noticia-info">
+                    <h3>Campeones EA Cup - Leones del Sur</h3>
+                    <p>La última fecha de la Copa EA realizada el <b>18 de Febrero de 2023.</b> <br> Los <b>Leones del
+                            Sur</b>
+                        se hicieron con la victoria coronándose por <b>séptima</b> vez campeones de la Copa EA.</p>
+                </div>
+            </article>
+        </div>
+    </article>
+    <article class="modal" id="noticia-2">
+        <div class="modal-content">
+            <a href="#cerrar" class="modal-close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path
+                        d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M16.207,14.793l-1.414,1.414L12,13.414 l-2.793,2.793l-1.414-1.414L10.586,12L7.793,9.207l1.414-1.414L12,10.586l2.793-2.793l1.414,1.414L13.414,12L16.207,14.793z" />
+                </svg>
+            </a>
+            <article class="noticia-modal">
+                <img src="assets/Noticia2.jpg" alt="noticia 2">
+                <div class="noticia-info">
+                    <h3>Actualización Marzo 2023</h3>
+                    <p>Última fecha </p>
+                </div>
+            </article>
+        </div>
+    </article>
+    <article class="modal" id="noticia-3">
+        <div class="modal-content">
+            <a href="#cerrar" class="modal-close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path
+                        d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M16.207,14.793l-1.414,1.414L12,13.414 l-2.793,2.793l-1.414-1.414L10.586,12L7.793,9.207l1.414-1.414L12,10.586l2.793-2.793l1.414,1.414L13.414,12L16.207,14.793z" />
+                </svg>
+            </a>
+            <article class="noticia-modal">
+                <img src="assets/Noticia3.jpg" alt="noticia 3">
+                <div class="noticia-info">
+                    <h3>Únete a Clubes Pro - 2023</h3>
+                    <p>La última fecha de la Copa EA realizada el <b>18 de Febrero de 2023.</b> <br> Los <b>Leones del
+                            Sur</b>
+                        se hicieron con la victoria coronándose por <b>séptima</b> vez campeones de la Copa EA.</p>
+                </div>
+            </article>
+        </div>
+    </article>
     <section id="proximos" class="proximos-partidos background-color-2 section">
         <section class="container background-color-2">
             <h2 class="section-title">PRÓXIMO PARTIDO</h2>
@@ -154,8 +190,8 @@
                 </div>
                 <div class="gallery-cell is-initial-select">
                     <div class="fecha">
-                        <div class="numero">20</div>
-                        <div class="fecha-dia">LUNES</div>
+                        <div class="numero">28</div>
+                        <div class="fecha-dia">MARTES</div>
                         <div class="mensaje-fecha1">FECHA</div>
                         <div class="fecha-mes">FEBRERO</div>
                         <div class="mensaje-fecha2">ACTUAL</div>

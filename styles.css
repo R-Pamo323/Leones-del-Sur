@@ -135,12 +135,12 @@ p {
   fill: var(--first-color);
 }
 
-.modal[id|="galeria"]:target {
+.modal[id|="noticia"]:target {
   opacity: 1;
   pointer-events: auto;
 }
 
-.galeria-modal {
+.noticia-modal {
   background-color: var(--white-color);
   padding: 1rem;
   max-width: 400px;
@@ -148,10 +148,22 @@ p {
   flex-direction: column;
 }
 
-.galeria-modal img {
+.noticia-modal img {
   width: 400px;
   height: 400px;
   object-fit: cover; /*para que no pierda el aspecto la imagen si es de diferente tamaño*/
+}
+
+.noticia-modal h3 {
+  border-bottom: medium solid var(--first-color);
+  padding: 0.5rem 0;
+  margin: 1rem auto;
+  color: var(--first-color);
+  text-align: center;
+}
+
+.noticia-modal p {
+  text-align: center;
 }
 
 .container {
@@ -345,82 +357,44 @@ p {
 }
 
 /*********************************************HOME**********************************************/
-
-/*************CAROUSEL***************/
-@keyframes carousel-slide {
-  0% {
-    transform: translateX(0%);
-  }
-
-  33% {
-    transform: translateX(-33%);
-  }
-
-  66% {
-    transform: translateX(-66%);
-  }
+.carousel-noticias {
+  background: var(--black-color);
 }
 
-.avatar {
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: -2rem;
-  /* padding-right: 17px;
-  padding-left: 10px;*/
-  width: 1024px;
-  height: auto;
+.carousel-cell-noticias {
+  width: 66%;
+  height: 250px;
+  margin-right: 10px;
+  background: var(--black-color);
+  border-radius: 5px;
 }
 
-.carousel {
-  /*margin: 2rem auto;*/
-  /*padding: 2rem 0;*/
-  max-width: 100%;
+/* cell number */
+.carousel-cell-noticias:before {
+  display: block;
   text-align: center;
-  overflow-x: hidden;
-  background-color: var(--carousel-bg-color);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
 }
 
-.carousel .slides {
-  padding-left: 0;
-  /*Por cada slide debemos aumentar el ancho 100%*/
-  display: flex;
-  list-style: none;
-  width: 300%;
-  transition: transform 0.5s ease-in-out;
-  /*animation: carousel-slide 12s ease-in-out 3s;*/
+.noticia-foto {
+  position: relative;
 }
 
-/*~ este simbolo lo que hace es señalar al siguiente hermano*/
-#slide-1:checked ~ .slides {
-  transform: translateX(0%);
+.noticia-foto .especial {
+  padding: 13px;
 }
 
-#slide-2:checked ~ .slides {
-  transform: translateX(-33.3333333333%);
-}
-
-#slide-3:checked ~ .slides {
-  transform: translateX(-66.666666666%);
-}
-
-#slide-1:checked ~ .slides-nav label#dot-1,
-#slide-2:checked ~ .slides-nav label#dot-2,
-#slide-3:checked ~ .slides-nav label#dot-3 {
-  background-color: var(--first-color);
-}
-
-.carousel input {
-  display: none;
-}
-
-.carousel label {
-  border: medium solid var(--first-alpha-color);
-  border-radius: 50%;
-  display: inline-block;
-  width: 0.75rem;
-  height: 0.75rem;
-  cursor: pointer;
-  margin: 0 0.25rem;
+.noticia-title {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 1));
+  width: 100%;
+  margin: 0;
+  padding: 25px;
+  text-align: center;
 }
 
 /*TIMER DE PROXIMO PARTIDO*/
@@ -794,7 +768,7 @@ p {
   text-align: center;
   font-style: bold;
   font-weight: bold;
-  font-size: 2.2rem;
+  font-size: 2.1rem;
 }
 
 .info-jugador-1 .posicion {
