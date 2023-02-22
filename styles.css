@@ -143,14 +143,14 @@ p {
 .noticia-modal {
   background-color: var(--white-color);
   padding: 1rem;
-  max-width: 400px;
+  max-width: 500px;
   display: flex;
   flex-direction: column;
 }
 
 .noticia-modal img {
-  width: 400px;
-  height: 400px;
+  width: 500px;
+  height: 500px;
   object-fit: cover; /*para que no pierda el aspecto la imagen si es de diferente tamaño*/
 }
 
@@ -166,6 +166,32 @@ p {
   text-align: center;
 }
 
+@media screen and (min-width: 1024px) {
+  .noticia-modal {
+    max-width: 1200px;
+  }
+
+  .noticia-modal img {
+    width: 1200px;
+    height: auto;
+    object-fit: cover; /*para que no pierda el aspecto la imagen si es de diferente tamaño*/
+  }
+
+  .noticia-modal h3 {
+    border-bottom: medium solid var(--first-color);
+    padding: 0.5rem 0;
+    margin: 1rem auto;
+    color: var(--first-color);
+    text-align: center;
+    font-size: 2rem;
+  }
+  .noticia-modal p {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+}
+
+/*CIERRE VENTANA MODAL*/
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -395,6 +421,52 @@ p {
   margin: 0;
   padding: 25px;
   text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .carousel-noticias {
+    background: var(--black-color);
+  }
+
+  .carousel-cell-noticias {
+    width: 66%;
+    height: 450px;
+    margin-right: 10px;
+    background: var(--black-alpha-color);
+  }
+
+  /* cell number */
+  .carousel-cell-noticias:before {
+    display: block;
+    text-align: center;
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+  }
+
+  .noticia-foto img {
+    height: 450px;
+    width: auto;
+  }
+
+  .noticia-foto .especial {
+    padding-bottom: 20px;
+  }
+
+  .noticia-foto {
+    position: relative;
+  }
+
+  .noticia-title {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 1));
+    width: 100%;
+    margin: 0;
+    padding: 25px;
+    text-align: center;
+  }
 }
 
 /*TIMER DE PROXIMO PARTIDO*/
