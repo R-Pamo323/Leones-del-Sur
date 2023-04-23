@@ -26,7 +26,7 @@ const $days = document.getElementById("days"),
   $minutes = document.getElementById("minutes"),
   $seconds = document.getElementById("seconds");
 /*Fecha del proximo partido*/
-const countdownDate = new Date("Feb 28, 2023 19:00:00").getTime();
+const countdownDate = new Date("Jul 28, 2023 21:00:00").getTime();
 
 let interval = setInterval(function () {
   //Fecha actual en milisegundos
@@ -42,7 +42,7 @@ let interval = setInterval(function () {
   let seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   //Escribimos resultados
-  $days.innerHTML = "0" + days;
+  $days.innerHTML = days;
   $hours.innerHTML = hours;
   $minutes.innerHTML = minutes;
   $seconds.innerHTML = ("0" + seconds).slice(-2);

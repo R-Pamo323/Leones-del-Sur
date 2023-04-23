@@ -1098,3 +1098,270 @@ p {
     padding-bottom: 0;
   }*/
 }
+
+@media screen and (max-width: 450px) {
+  /*********************************************HOME**********************************************/
+  .carousel-noticias {
+    background: var(--black-color);
+  }
+
+  .carousel-cell-noticias {
+    width: 66%;
+    height: 150px;
+    margin-right: 10px;
+    background: var(--black-color);
+    border-radius: 5px;
+  }
+
+  /* cell number */
+  .carousel-cell-noticias:before {
+    display: block;
+    text-align: center;
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+  }
+
+  .noticia-foto {
+    position: relative;
+  }
+
+  .noticia-foto .especial {
+    padding: 13px;
+  }
+
+  .noticia-title {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 1));
+    width: 100%;
+    margin: 0;
+    padding: 25px;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .fecha {
+    border: thin solid black;
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(251, 2, 27, 1) 100%
+    );
+    color: white;
+    display: grid;
+    grid-template-columns: 60px auto auto;
+  }
+
+  .fecha .numero {
+    grid-row: span 2;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 20px 0;
+    font-style: bold;
+    font-weight: bold;
+  }
+
+  .fecha .fecha-dia {
+    font-size: 1.1rem;
+    font-style: bold;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 15px;
+  }
+
+  .fecha .fecha-mes {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 15px;
+  }
+
+  .fecha .mensaje-fecha1 {
+    font-size: 1.1rem;
+    font-style: bold;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: end;
+    padding-right: 20px;
+  }
+
+  .fecha .mensaje-fecha2 {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: end;
+    padding-right: 20px;
+  }
+
+  .contenido {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+      "logo-copa logo-copa logo-copa"
+      "mensaje-partido  mensaje-partido mensaje-partido"
+      "escudo-1  horario  escudo-2"
+      "rivales    rivales  rivales"
+      "estadio estadio estadio";
+    /*grid-template-columns: 100px auto 100px;*/
+    border: thin solid black;
+  }
+
+  .contenido .logo-copa {
+    grid-column: span 3;
+    text-align: center;
+    grid-area: logo-copa;
+  }
+
+  .contenido .logo-copa > img {
+    width: 100px;
+    height: auto;
+    margin: 0;
+    padding-left: 10px;
+    padding-top: 10px;
+    filter: drop-shadow(2px 2px 3px #f01d13);
+  }
+
+  .contenido .mensaje-partido {
+    grid-column: span 3;
+    text-align: center;
+    font-size: 1.1rem;
+    grid-area: mensaje-partido;
+    color: white;
+  }
+
+  .contenido .rivales {
+    font-size: 1.3rem;
+    grid-column: span 3;
+    text-align: center;
+    font-style: bold;
+    font-weight: bold;
+    color: white;
+    grid-area: rivales;
+  }
+
+  .contenido .estadio {
+    grid-column: span 3;
+    text-align: center;
+    font-style: oblique;
+    font-size: 1rem;
+    grid-area: estadio;
+    color: white;
+  }
+
+  .contenido .escudo-1 {
+    grid-area: escudo-1;
+    width: 70px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    filter: drop-shadow(4px 4px 4px #f01d13);
+  }
+
+  .contenido .escudo-2 {
+    grid-area: escudo-2;
+    width: 70px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    filter: drop-shadow(4px 4px 4px #f01d13);
+  }
+
+  .contenido .horario {
+    grid-area: horario;
+    font-size: 1.8rem;
+    font-style: bold;
+    font-weight: bold;
+    text-align: center;
+    align-self: center;
+    background: linear-gradient(
+      90deg,
+      rgb(255, 255, 255) 30%,
+      rgba(251, 2, 27, 1) 100%
+    );
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  .info-jugador-1 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, auto);
+    color: white;
+    text-align: center;
+    padding-top: 343px;
+    transition: all 0.4s ease-in-out;
+    border-bottom: 2px solid white;
+  }
+
+  .info-jugador-1 .nombre {
+    text-align: center;
+    font-style: bold;
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+
+  .info-jugador-1 .posicion {
+    text-align: center;
+    font-style: italic;
+    font-size: 0.9rem;
+    padding-bottom: 10px;
+  }
+
+  .info-jugador-2 {
+    color: white;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+  }
+
+  .info-jugador-2 .stats {
+    font-size: 0.4rem;
+    font-style: bold;
+    font-weight: bold;
+  }
+
+  .info-jugador-2 .stats-info {
+    font-style: bold;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-top: 0;
+  }
+
+  .carousel-cell:hover .info-jugador-1 {
+    padding-top: 225px;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .gallery-title {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 1));
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    font-size: 15px;
+  }
+
+  .galeria-trofeos {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, auto);
+  }
+}
