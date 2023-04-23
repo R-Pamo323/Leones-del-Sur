@@ -1164,7 +1164,7 @@ p {
   }
 
   .fecha .fecha-dia {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     font-style: bold;
     font-weight: bold;
     display: flex;
@@ -1174,7 +1174,7 @@ p {
   }
 
   .fecha .fecha-mes {
-    font-size: 1rem;
+    font-size: 0.8rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -1182,7 +1182,7 @@ p {
   }
 
   .fecha .mensaje-fecha1 {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     font-style: bold;
     font-weight: bold;
     display: flex;
@@ -1193,7 +1193,7 @@ p {
   }
 
   .fecha .mensaje-fecha2 {
-    font-size: 1rem;
+    font-size: 0.8rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
