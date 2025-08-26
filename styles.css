@@ -553,10 +553,17 @@ p {
 /*Carousel de Internetxxxxx*/
 .gallery-cell .fecha {
   border: thin solid white;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  padding-left: 20px;
 }
 
 .gallery-cell .contenido {
   border: thin solid white;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  padding-bottom: 20px;
+  padding-top: 10px;
 }
 
 .gallery {
@@ -566,10 +573,11 @@ p {
 
 .gallery-cell {
   width: 66%;
-  height: 400px;
+  height: 500px;
   margin-top: 50px;
   margin-right: 10px;
   background: #0a0a0a;
+  padding-left: 10px;
   /*counter-increment: gallery-cell;*/
 }
 
@@ -668,6 +676,7 @@ p {
     "estadio estadio estadio";
   /*grid-template-columns: 100px auto 100px;*/
   border: thin solid black;
+  gap: 15px;
 }
 
 .contenido .logo-copa {
@@ -954,20 +963,21 @@ p {
   width: 100px;
   height: auto;
   filter: drop-shadow(4px 4px 4px #f01d13);
-  padding-top: 10px;
+  padding-top: 20px;
 }
 
 .escudo-frase h2 {
   color: var(--first-color);
   font-style: italic;
   font-size: 2rem;
-  padding-top: 10px;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 
 .escudo-frase h3 {
   color: #efb810;
   font-size: 1.5rem;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 
 /********************Galeria de imagenes************/
