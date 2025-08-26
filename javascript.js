@@ -26,7 +26,7 @@ const $days = document.getElementById("days"),
   $minutes = document.getElementById("minutes"),
   $seconds = document.getElementById("seconds");
 /*Fecha del proximo partido*/
-const countdownDate = new Date("May 25, 2024 21:00:00").getTime();
+const countdownDate = new Date("October 18, 2025 21:00:00").getTime();
 
 let interval = setInterval(function () {
   //Fecha actual en milisegundos
