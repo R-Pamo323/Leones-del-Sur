@@ -9,11 +9,11 @@ Aquí encontrarás todo sobre nuestro equipo: jugadores, trofeos, partidos, foto
 
 ## 📸 ¿Qué encontrarás en la página?  
 
-- 🏆 **Trofeos** – Todos los títulos y logros que hemos conseguido.  
-- 👥 **Jugadores** – Conoce a cada integrante del equipo.  
-- ⚽ **Partidos y resultados** – Mira nuestros encuentros y próximos partidos.  
-- 📰 **Noticias** – Entérate de las novedades y actualizaciones del equipo.  
+- 📰 **Noticias** – Entérate de las novedades y actualizaciones del equipo.
+- ⚽ **Partidos y resultados** – Mira nuestros encuentros y próximos partidos.
+- 👥 **Jugadores** – Conoce a cada integrante del equipo.
 - 📷 **Galería de fotos** – Momentos inolvidables dentro y fuera de la cancha.  
+- 🏆 **Trofeos** – Todos los títulos y logros que hemos conseguido.  
 
 ---
 
